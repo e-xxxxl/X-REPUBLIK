@@ -9,6 +9,7 @@ import FAQ from '../Hero/FAQ'
 import SideScroll from '../Marquee/SideScroll'
 import WhiteMarquee from '../Marquee/WhiteMarquee'
 import Footer from '../Footer/Footer'
+import { Analytics } from "@vercel/analytics/react"
 
 
 const LandingPage = () => {
@@ -23,6 +24,7 @@ const LandingPage = () => {
          <WhiteMarquee/>
          <FAQ/>
          <Footer/>
+         <Analytics/>
     </>
   )
 }
