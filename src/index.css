@@ -185,9 +185,7 @@ body {
  
  margin-left:25px
 }
-.faq-section{
-  margin-left:25px
-}
+
 
 /* Animation */
 @keyframes white-marquee-scroll {
@@ -210,6 +208,13 @@ body {
   .hero-img{
     margin-top: -420px;
   }
+  .vertical-marquee-container{
+    display:none;
+  } 
+  .second-hero-main{
+ 
+    margin-left:0px;
+   }
 }
 @media (min-width: 800px) and (max-width: 804px) {
   
