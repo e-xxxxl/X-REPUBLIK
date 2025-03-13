@@ -27,7 +27,7 @@ const SecondHero = () => {
           illuminating the future of Gen Z and millennials in the most dynamic
           and immersive ways.
         </p>
-        <button className="mt-5 sm:mt-6 bg-red-600 px-4 sm:px-6 py-2 text-xs sm:text-sm md:text-base font-semibold uppercase rounded-lg hover:bg-red-700 transition">
+        <button className="mt-5 sm:mt-6 bg-red-600 px-4 sm:px-6 py-2 text-xs sm:text-sm md:text-base font-semibold uppercase  hover:bg-red-700 transition">
           About Us
         </button>
       </div>
