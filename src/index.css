@@ -28,7 +28,7 @@ body {
   display: flex;
   white-space: nowrap;
   min-width: 100%;
-  animation: scroll 35s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 .marquee span {
@@ -62,8 +62,8 @@ body {
 
 .scrolling-banner {
   display: flex;
-  gap: 60px;
-  animation: scroll-banner 25s linear infinite;
+  gap: 70px;
+  animation: scroll-banner 20s linear infinite;
 }
 
 .scrolling-banner-item {
@@ -161,7 +161,7 @@ body {
 .white-marquee-content {
   display: flex;
   gap: 20px;
-  animation: white-marquee-scroll 25s linear infinite;
+  animation: white-marquee-scroll 20s linear infinite;
 }
 
 .white-marquee-item {
@@ -214,6 +214,23 @@ body {
   .second-hero-main{
     margin-left:0px;
    }
+   .marquee {
+    display: flex;
+    white-space: nowrap;
+    min-width: 100%;
+    animation: scroll 10s linear infinite;
+  }
+  
+.scrolling-banner {
+  display: flex;
+  gap: 70px;
+  animation: scroll-banner 10s linear infinite;
+}
+.white-marquee-content {
+  display: flex;
+  gap: 20px;
+  animation: white-marquee-scroll 10s linear infinite;
+}
 }
 @media (min-width: 800px) and (max-width: 804px) {
   
