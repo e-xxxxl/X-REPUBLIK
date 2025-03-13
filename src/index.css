@@ -1,0 +1,218 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Herokid";
+  src: url("/fonts/Herokid.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  @apply bg-black text-white;
+}
+body {
+  font-family: 'Herokid', sans-serif;
+}
+.marquee-container {
+  width: 100%;
+  background-color: red;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 2px 0; /* Reduced height */
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -320px; /* Moves it up */
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  min-width: 100%;
+  animation: scroll 35s linear infinite;
+}
+
+.marquee span {
+  display: flex;
+  font-size: 16px; /* Slightly smaller text */
+  font-weight: bold;
+  font-family: monospace;
+  text-transform: uppercase;
+  color: black;
+  gap: 30px;
+}
+
+/* Smooth Scrolling Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scrolling-banner-container {
+  width: 100%;
+  background-color: yellow;
+  overflow: hidden;
+  padding: 4px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scrolling-banner {
+  display: flex;
+  gap: 60px;
+  animation: scroll-banner 25s linear infinite;
+}
+
+.scrolling-banner-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scrolling-icon {
+  width: 22px; /* Adjust icon size */
+  height: auto;
+}
+
+.scrolling-text {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+}
+
+@keyframes scroll-banner {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes verticalScroll {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Container to keep it on top */
+.vertical-marquee-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 200, 81, 1); /* Green background */
+  z-index: 20;
+  display: flex;
+  align-items: center;
+}
+
+/* Marquee scrolling effect */
+.vertical-marquee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: verticalScroll 20s linear infinite;
+}
+
+.vertical-marquee-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.marquee-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.marquee-text {
+  margin-left: 10px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+
+.white-marquee-container {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  padding: 4px 0;
+  white-space: nowrap;
+  position: relative;
+  z-index: 5;
+}
+
+.white-marquee-content {
+  display: flex;
+  gap: 20px;
+  animation: white-marquee-scroll 25s linear infinite;
+}
+
+.white-marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.white-marquee-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.white-marquee-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+  text-transform: uppercase;
+}
+.second-hero-main{
+ 
+ margin-left:25px
+}
+.faq-section{
+  margin-left:25px
+}
+
+/* Animation */
+@keyframes white-marquee-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .wel-text{
+    margin-bottom: 45px;
+  }
+  .marquee-container{
+    top: -290px;
+  }
+  .hero-img{
+    margin-top: -290px;
+  }
+}
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
