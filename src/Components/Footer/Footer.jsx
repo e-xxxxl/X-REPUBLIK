@@ -14,7 +14,7 @@ const Footer = () => {
 
         {/* Center Section: Copyright */}
         <div className="text-xs md:text-sm text-center font-bold uppercase tracking-wide">
-          © 2025. X Republik. TAG WURLD. TAG MEDIA. A&C
+          © 2025. X Republik. TAG WURLD. TAG MEDIA. AEC
         </div>
 
         {/* Right Section: Social Icons */}
