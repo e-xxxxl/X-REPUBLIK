@@ -51,6 +51,7 @@ const Navbar = () => {
                   >
                     <li className="px-4 py-2 hover:bg-[#FF0000]"><a href="#">MEET THE TEAM</a></li>
                     <li className="px-4 py-2 hover:bg-[#FF0000]"><a href="#">MEET THE EVENT CREW</a></li>
+                    <li className="px-4 py-2 hover:bg-[#FF0000]"><a href="#">Download Schedule</a></li>
                   </ul>
                 </li>
 
@@ -121,6 +122,7 @@ const Navbar = () => {
                   <ul className="pl-6 space-y-2">
                     <li className="py-2 hover:text-[#FF0000]"><a href="#">MEET THE TEAM</a></li>
                     <li className="py-2 hover:text-[#FF0000]"><a href="#">MEET THE EVENT CREW</a></li>
+                    <li className="py-2 hover:text-[#FF0000]"><a href="#">DOWNLOAD SCHEDULE</a></li>
                   </ul>
                 )}
 

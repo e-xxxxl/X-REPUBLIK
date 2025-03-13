@@ -5,8 +5,8 @@ import SideScroll from "../Marquee/SideScroll";
 
 const faqData = [
   { question: "WHAT IS X REPUBLIK?", answer: "X Republik is a festival that brings together creativity, music, and culture.", color: "bg-red-600" },
-  { question: "WHEN IS X REPUBLIK HAPPENING?", answer: "X Republik is happening on [Insert Date Here].", color: "bg-yellow-400 text-black" },
-  { question: "WHO ARE THE HOSTS OF X REPUBLIK?", answer: "The hosts of X Republik are [Insert Hosts Here].", color: "bg-black" },
+  { question: "WHEN IS X REPUBLIK HAPPENING?", answer: "X Republik is happening on 0/0/0.", color: "bg-yellow-400 text-black" },
+  { question: "WHO ARE THE HOSTS OF X REPUBLIK?", answer: "The hosts of X Republik are TAG WURLD and COCA COLA.", color: "bg-black" },
 ];
 
 const FAQ = () => {
@@ -34,7 +34,7 @@ const FAQ = () => {
         {/* FAQ Items */}
         <div className="w-full space-y-4">
           {faqData.map((faq, index) => (
-            <div key={index} className="rounded-lg shadow-lg overflow-hidden">
+            <div key={index} className=" shadow-lg overflow-hidden">
               <button
                 className={`w-full flex justify-between items-center px-4 sm:px-6 py-5 sm:py-6 font-bold uppercase text-base sm:text-lg ${faq.color}`}
                 onClick={() => toggleFAQ(index)}

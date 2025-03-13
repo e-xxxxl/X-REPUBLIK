@@ -202,15 +202,19 @@ body {
 
 @media (max-width: 768px) {
   .wel-text{
-    margin-bottom: 45px;
+    margin-bottom: 135px;
   }
   .marquee-container{
-    top: -290px;
+    top: -420px;
   }
   .hero-img{
-    margin-top: -290px;
+    margin-top: -420px;
   }
 }
+@media (min-width: 800px) and (max-width: 804px) {
+  
+}
+
 /* *{
   margin: 0;
   padding: 0;
