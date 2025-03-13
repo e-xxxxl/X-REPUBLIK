@@ -1,5 +1,6 @@
 import React from "react";
-import { FaWhatsapp, FaXTwitter, FaInstagram, FaYoutube, FaTiktok, FaBell } from "react-icons/fa6";
+import { FaWhatsapp, FaXTwitter, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa6";
+import { FaSnapchatGhost } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,15 +22,26 @@ const Footer = () => {
         <div className="flex flex-col items-center md:flex-row gap-2 md:gap-4">
           <span className="text-xs md:text-sm font-semibold uppercase">Socials:</span>
           <div className="flex gap-3">
-            <FaWhatsapp className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
-            <FaXTwitter className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
-            <FaInstagram className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
-            <FaYoutube className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
-            <FaTiktok className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
-            <FaBell className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
+            <a href="https://wa.me/+2348109072755?text=Name:%20%0AEmail:%20%0APhone:%20%0AMessage:%20I%20need%20help!%0Aℹ%20From%20X%20Republic" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
+            </a>
+            <a href="https://x.com/tagwurld?t=PhfeofJII_6VOUHF-6f_1Q&s=09" target="_blank" rel="noopener noreferrer">
+              <FaXTwitter className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
+            </a>
+            <a href="https://www.instagram.com/tag.wulrd?igsh=d2JsYjhuYTlzODh5" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
+            </a>
+            <a href="https://youtube.com/your-channel" target="_blank" rel="noopener noreferrer">
+              <FaYoutube className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
+            </a>
+            <a href="https://www.tiktok.com/@tagtotheworld?_t=ZM-8ueVf686D2t&_r=1" target="_blank" rel="noopener noreferrer">
+              <FaTiktok className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
+            </a>
+            <a href="https://snapchat.com/t/3uSfBmET" target="_blank" rel="noopener noreferrer">
+              <FaSnapchatGhost className="text-red-600 hover:text-red-500 text-base md:text-lg cursor-pointer" />
+            </a>
           </div>
         </div>
-
       </div>
     </footer>
   );
