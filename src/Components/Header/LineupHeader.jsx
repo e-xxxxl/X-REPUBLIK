@@ -9,7 +9,7 @@ const LineupHeader = () => {
           
     
           {/* Hero Section */}
-          <div className="flex  wel-text flex-col items-center justify-center flex-grow text-white text-center">
+          <div className="flex lineup-header  wel-text flex-col items-center justify-center flex-grow text-white text-center">
             {/* Welcome Text with Arrow in Front */}
             <h1 className="text-xl md:text-3xl mb-48 font-extrabold uppercase flex items-center gap-2">
               <ChevronDown size={24} className="text-green-500 animate-bounce" />

@@ -245,6 +245,12 @@ body {
   .hero-img {
     margin-top: -550px;
   }
+  .lineup-header{
+    margin-bottom: 265px;
+  }
+  .lineup-image{
+    margin-top: -550px;
+  }
 }
 @media(min-height: 850px) and (max-height: 880px) {
   .wel-text {
@@ -299,6 +305,9 @@ body {
   }
   .hero-img {
     margin-top: -525px;
+  }
+  .lineup-image{
+    margin-top: -520px;
   }
 }
 @media(min-height: 840px) and (max-height: 844px) {
