@@ -6,13 +6,20 @@ import Navbar from './Components/Navbar/Navbar'
 import Header from './Components/Header/Header'
 import Marquee from './Components/Marquee/Marquee'
 import LandingPage from './Components/Pages/LandingPage'
+import { Route, Routes } from 'react-router-dom'
+import LineupPage from './Components/Pages/LineupPage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <LandingPage/>
+
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+        <Route path='/lineup' element={<LineupPage/>} />
+      </Routes>
+      
     </>
   )
 }
