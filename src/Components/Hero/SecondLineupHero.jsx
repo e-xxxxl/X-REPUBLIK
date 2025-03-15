@@ -28,7 +28,7 @@ const SecondLineupHero = () => {
       style={{ backgroundImage: `url(${secondlineupheroimg})` }}
     >
 {/* 🔹 Filter Bar */}
-<div className="w-[90%] sm:w-full bg-black px-2 py-1 sm:px-3 sm:py-2 flex flex-col items-center gap-2 sm:gap-3">
+<div className="w-[100%] sm:w-full bg-black px-2 py-1 sm:px-3 sm:py-2 flex flex-col items-center gap-2 sm:gap-3">
   {/* 🔹 Categories */}
   <div className="flex overflow-x-auto space-x-2 sm:space-x-3 w-full sm:w-auto justify-center">
     {categories.map((category) => (
