@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import secondlineupheroimg from "../../assets/images/secondlineupheroimg.png";
+import secondlineupheroimg from "../../assets/images/secondlineupheroimg2.jpg";
 
 const artists = [
   { name: "Rema", image: secondlineupheroimg },
@@ -23,34 +23,35 @@ const SecondLineupHero = () => {
       className="w-full bg-cover bg-center p-6"
       style={{ backgroundImage: `url(${secondlineupheroimg})` }}
     >
-      {/* 🔹 Filter Bar */}
-      <div className="w-full bg-black p-3 flex flex-col md:flex-row justify-between items-center">
-        {/* 🔹 Categories */}
-        <div className="flex overflow-x-auto space-x-2 md:space-x-4 w-full md:w-auto">
-          {categories.map((category) => (
-            <button
-              key={category}
-              className={`px-6 py-2 text-lg font-bold uppercase transition-all duration-300 whitespace-nowrap
-                ${
-                  selectedCategory === category
-                    ? "bg-red-600 text-white"
-                    : "text-white hover:bg-gray-800"
-                }`}
-              onClick={() => setSelectedCategory(category)}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+{/* 🔹 Filter Bar */}
+<div className="w-full bg-black px-2 py-1 sm:px-3 sm:py-2 flex flex-col items-center gap-2 sm:gap-3">
+  {/* 🔹 Categories */}
+  <div className="flex overflow-x-auto space-x-2 sm:space-x-3 w-full sm:w-auto justify-center">
+    {categories.map((category) => (
+      <button
+        key={category}
+        className={`px-3 py-1 sm:px-4 sm:py-2 text-xs sm:text-sm font-bold uppercase transition-all duration-300 whitespace-nowrap
+          ${
+            selectedCategory === category
+              ? "bg-red-600 text-white"
+              : "text-white hover:bg-gray-800"
+          }`}
+        onClick={() => setSelectedCategory(category)}
+      >
+        {category}
+      </button>
+    ))}
+  </div>
 
-        {/* 🔹 Clear Button */}
-        <button
-          className="text-white uppercase text-sm mt-2 md:mt-0 hover:underline"
-          onClick={() => setSelectedCategory("")}
-        >
-          Clear
-        </button>
-      </div>
+  {/* 🔹 Centered & Smaller Clear Button */}
+  <button
+    className="text-white uppercase text-xs sm:text-sm hover:underline px-2 py-1 border-none"
+    onClick={() => setSelectedCategory("")}
+  >
+    Clear
+  </button>
+</div>
+
 
       {/* 🔹 Legend (Key) */}
       <div className="mt-6 space-y-3 text-white">
