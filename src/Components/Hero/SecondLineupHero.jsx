@@ -1,15 +1,20 @@
 import React, { useState } from "react";
 import secondlineupheroimg from "../../assets/images/secondlineupheroimg2.jpg";
-
+import bujuimg from "../../assets/images/buju.jpg";
+import ayraimg from "../../assets/images/ayraa.jpg";
+import vibezimg from "../../assets/images/vibez.jpg";
+import santiimg from "../../assets/images/santi.jpg";
+import rugerimg from "../../assets/images/ruger.jpg";
+import maffimg from "../../assets/images/maff.jpg";
 const artists = [
-  { name: "Rema", image: secondlineupheroimg },
-  { name: "Burna Boy", image: secondlineupheroimg },
-  { name: "Wizkid",    image: secondlineupheroimg },
-  { name: "Davido",    image: secondlineupheroimg },
-  { name:"Tiwa Savage",image: secondlineupheroimg },
+  { name: "BNXN", image: bujuimg },
+  { name: "Ayra Starr", image: ayraimg },
+  { name: "Seyi Vibez",    image: vibezimg },
+  { name: "Ruger",    image: rugerimg },
+  { name:"Cruel Santino",image: santiimg },
   { name: "Olamide",   image: secondlineupheroimg },
   { name: "Tems",      image: secondlineupheroimg },
-  { name: "Fireboy",   image: secondlineupheroimg },
+  { name: "Ayo Maff",   image: maffimg },
 ];
 
 const SecondLineupHero = () => {
@@ -81,7 +86,7 @@ const SecondLineupHero = () => {
   {artists.map((artist, index) => (
     <div
       key={index}
-      className={`relative w-full h-40 bg-gray-300 overflow-hidden group cursor-pointer border-b-4 border-red-600 
+      className={`relative w-full  h-40 md:h-96 bg-gray-300 overflow-hidden group cursor-pointer border-b-4 border-red-600 
         ${index >= 6 ? "col-span-1 sm:col-span-1 md:col-span-1" : ""}
         ${index >= 6 ? "grid-cols-2" : ""}
       `}
@@ -92,7 +97,7 @@ const SecondLineupHero = () => {
         alt={artist.name}
         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
       />
-      <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-2 text-center">
+      <div className="absolute bottom-0 left-0 w-full text-xs md:text-2xl bg-black bg-opacity-50 text-white p-2 text-center">
         {artist.name}
       </div>
     </div>
