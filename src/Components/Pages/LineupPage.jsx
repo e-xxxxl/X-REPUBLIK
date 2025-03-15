@@ -7,6 +7,7 @@ import YellowMarquee from '../Marquee/YellowMarquee'
 import SecondLineupHero from '../Hero/SecondLineupHero'
 import WhiteMarquee from '../Marquee/WhiteMarquee'
 import Footer from '../Footer/Footer'
+import Artistecontact from '../Artistecontact/Artistecontact'
 
 const LineupPage = () => {
   return (
@@ -17,6 +18,8 @@ const LineupPage = () => {
         <LineupHero/>
         <YellowMarquee/>
         <SecondLineupHero/>
+        <WhiteMarquee/>
+        <Artistecontact/>
         <WhiteMarquee/>
         <Footer/>
     </>
