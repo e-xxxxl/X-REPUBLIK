@@ -11,10 +11,10 @@ const artists = [
   { name: "Ayra Starr", fullName:"Oyinkansola Sarah Aderibigbe", dob:"born 14 June 2002", image: ayraimg, desc:"A fast-rising Nigerian singer and songwriter signed to Mavin Records. She blends Afropop and R&B, with hits like Rush and Bloody Samaritan." },
   { name: "Seyi Vibez", fullName:"Balogun Afolabi Oluwaloseyi", dob:"born 12 July 2000", image: vibezimg, desc:"" },
   { name: "Ruger", fullName:"Michael Adebayo Olayinka", dob:"born 23 September 1999", image: rugerimg, desc:"A Nigerian Afrobeats and dancehall artist signed to Jonzing World. Recognized for his distinctive eye patch and hit songs like Bounce and Asiwaju." },
-  { name:"Cruel Santino", fullName:"Osayaba Andrew Ize-Iyamu", dob:"3 June 1992", image: santiimg, desc:"" },
+  { name:"Cruel Santino", fullName:"Osayaba Andrew Ize-Iyamu", dob:"3 June 1992", image: santiimg, desc:" A Nigerian artist and creative known for pioneering the alté movement. His music is a fusion of Afrobeats, dancehall, and alternative sounds, with projects like Subaru Boys and Mandy & The Jungle." },
   { name: "Olamide", fullName:"", dob:"born 14 May 1997", image: secondlineupheroimg, desc:"" },
   { name: "Tems",  fullName:"Temilade Openiyi", dob:"born 11 June 1995", image: secondlineupheroimg,desc:"A Nigerian singer-songwriter and record producer known for her soulful voice and alternative R&B sound. She gained global fame with Essence (with Wizkid) and has worked with artists like Drake and Future." },
-  { name: "Ayo Maff",  fullName:"Ayorinde Mafoluku Ayodele", dob:"18 July 2005", image: maffimg,desc:"" },
+  { name: "Ayo Maff",  fullName:"Ayorinde Mafoluku Ayodele", dob:"18 July 2005", image: maffimg,desc:"An emerging Nigerian artist with a unique sound blending Afrobeats and alternative music. Still growing in the industry." },
 ];
 
 const SecondLineupHero = () => {
@@ -82,27 +82,25 @@ const SecondLineupHero = () => {
       </div>
 
       {/* 🔹 Performers Grid */}
-      <div className="grid grid-cols-3 gap-4 mt-6 sm:grid-cols-3 md:grid-cols-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6">
   {artists.map((artist, index) => (
     <div
       key={index}
-      className={`relative w-full  h-40 md:h-96 bg-gray-300 overflow-hidden group cursor-pointer border-b-4 border-red-600 
-        ${index >= 6 ? "col-span-1 sm:col-span-1 md:col-span-1" : ""}
-        ${index >= 6 ? "grid-cols-2" : ""}
-      `}
+      className={`relative w-full h-64 md:h-96 bg-gray-300 overflow-hidden group cursor-pointer border-b-4 border-red-600`}
       onClick={() => setSelectedArtist(artist)}
     >
       <img
         src={artist.image}
         alt={artist.name}
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        className="w-full h-96 md:h-full object-cover group-hover:scale-105 transition-transform duration-300"
       />
-      <div className="absolute bottom-0 left-0 w-full text-xs md:text-2xl bg-black bg-opacity-50 text-white p-2 text-center">
+      <div className="absolute bottom-0 left-0 w-full h-10 text-xl md:text-2xl bg-black bg-opacity-50 text-white p-2 text-center">
         {artist.name}
       </div>
     </div>
   ))}
 </div>
+
 
 
       {/* 🔹 Preview Section */}
@@ -119,7 +117,7 @@ const SecondLineupHero = () => {
           </h2>
           <p className=" text-sm md:text-xl font-mono font-medium mt-1">
           {selectedArtist.fullName} - {selectedArtist.dob} - popularly known as{" "}
-            {selectedArtist.name} is {selectedArtist.desc} .
+            {selectedArtist.name} is {selectedArtist.desc} 
           </p>
         </div>
       </div>
