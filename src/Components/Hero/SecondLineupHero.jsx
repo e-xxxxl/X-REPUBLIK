@@ -7,14 +7,14 @@ import santiimg from "../../assets/images/santi.jpg";
 import rugerimg from "../../assets/images/ruger.jpg";
 import maffimg from "../../assets/images/maff.jpg";
 const artists = [
-  { name: "BNXN", image: bujuimg },
-  { name: "Ayra Starr", image: ayraimg },
-  { name: "Seyi Vibez",    image: vibezimg },
-  { name: "Ruger",    image: rugerimg },
-  { name:"Cruel Santino",image: santiimg },
-  { name: "Olamide",   image: secondlineupheroimg },
-  { name: "Tems",      image: secondlineupheroimg },
-  { name: "Ayo Maff",   image: maffimg },
+  { name: "BNXN", fullName:"Daniel Etiese Benson",dob:"born 14 May 1997", image: bujuimg, desc:" A Nigerian singer and songwriter known for his smooth Afrobeats and dancehall-inspired sound. He gained recognition with hits like Feeling (with Ladipoe) and Finesse (with Pheelz)" },
+  { name: "Ayra Starr", fullName:"Oyinkansola Sarah Aderibigbe", dob:"born 14 June 2002", image: ayraimg, desc:"" },
+  { name: "Seyi Vibez", fullName:"Balogun Afolabi Oluwaloseyi", dob:"born 12 July 2000", image: vibezimg, desc:"" },
+  { name: "Ruger", fullName:"Michael Adebayo Olayinka", dob:"born 23 September 1999", image: rugerimg, desc:"" },
+  { name:"Cruel Santino", fullName:"Osayaba Andrew Ize-Iyamu", dob:"3 June 1992", image: santiimg, desc:"" },
+  { name: "Olamide", fullName:"", dob:"born 14 May 1997", image: secondlineupheroimg, desc:"" },
+  { name: "Tems",  fullName:"Temilade Openiyi", dob:"born 11 June 1995", image: secondlineupheroimg,desc:"" },
+  { name: "Ayo Maff",  fullName:"Ayorinde Mafoluku Ayodele", dob:"18 July 2005", image: maffimg,desc:"" },
 ];
 
 const SecondLineupHero = () => {
@@ -117,9 +117,9 @@ const SecondLineupHero = () => {
           <h2 className="text-lg font-bold text-yellow-500 uppercase">
             {selectedArtist.name}
           </h2>
-          <p className="text-sm font-medium mt-1">
-            Divine Ikubor - born 1 May 2000 -, popularly known as{" "}
-            {selectedArtist.name}, is a Nigerian singer, songwriter, and rapper.
+          <p className=" text-sm md:text-xl font-mono font-medium mt-1">
+          {selectedArtist.fullName} - {selectedArtist.dob} - popularly known as{" "}
+            {selectedArtist.name} is {selectedArtist.desc} .
           </p>
         </div>
       </div>
