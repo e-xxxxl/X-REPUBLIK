@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import secondlineupheroimg from "../../assets/images/secondlineupheroimg2.jpg";
 import bujuimg from "../../assets/images/buju.jpg";
 import ayraimg from "../../assets/images/ayraa.jpg";
-import vibezimg from "../../assets/images/vibez.jpg";
 import santiimg from "../../assets/images/santi.jpg";
 import rugerimg from "../../assets/images/ruger.jpg";
 import maffimg from "../../assets/images/maff.jpg";
@@ -28,7 +27,7 @@ const SecondLineupHero = () => {
       style={{ backgroundImage: `url(${secondlineupheroimg})` }}
     >
 {/* 🔹 Filter Bar */}
-<div className="w-[100%] sm:w-full bg-black px-2 py-1 sm:px-3 sm:py-2 flex flex-col items-center gap-2 sm:gap-3">
+<div className="w-[100%] sm:w-full border px-2 py-1 sm:px-3 sm:py-2 flex flex-col items-center gap-2 sm:gap-3">
   {/* 🔹 Categories */}
   <div className="flex font-mono overflow-x-auto p-3 space-x-2 sm:space-x-3 w-full sm:w-auto justify-center">
     {categories.map((category) => (
