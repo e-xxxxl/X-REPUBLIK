@@ -9,7 +9,6 @@ import maffimg from "../../assets/images/maff.jpg";
 const artists = [
   { name: "BNXN", fullName:"Daniel Etiese Benson",dob:"born 14 May 1997", image: bujuimg, desc:" A Nigerian singer and songwriter known for his smooth Afrobeats and dancehall-inspired sound. He gained recognition with hits like Feeling (with Ladipoe) and Finesse (with Pheelz)" },
   { name: "Ayra Starr", fullName:"Oyinkansola Sarah Aderibigbe", dob:"born 14 June 2002", image: ayraimg, desc:"A fast-rising Nigerian singer and songwriter signed to Mavin Records. She blends Afropop and R&B, with hits like Rush and Bloody Samaritan." },
-  { name: "Seyi Vibez", fullName:"Balogun Afolabi Oluwaloseyi", dob:"born 12 July 2000", image: vibezimg, desc:"" },
   { name: "Ruger", fullName:"Michael Adebayo Olayinka", dob:"born 23 September 1999", image: rugerimg, desc:"A Nigerian Afrobeats and dancehall artist signed to Jonzing World. Recognized for his distinctive eye patch and hit songs like Bounce and Asiwaju." },
   { name:"Cruel Santino", fullName:"Osayaba Andrew Ize-Iyamu", dob:"3 June 1992", image: santiimg, desc:" A Nigerian artist and creative known for pioneering the alté movement. His music is a fusion of Afrobeats, dancehall, and alternative sounds, with projects like Subaru Boys and Mandy & The Jungle." },
   { name: "Olamide", fullName:"", dob:"born 14 May 1997", image: secondlineupheroimg, desc:"" },
@@ -29,7 +28,7 @@ const SecondLineupHero = () => {
       style={{ backgroundImage: `url(${secondlineupheroimg})` }}
     >
 {/* 🔹 Filter Bar */}
-<div className="w-full bg-black px-2 py-1 sm:px-3 sm:py-2 flex flex-col items-center gap-2 sm:gap-3">
+<div className="w-[90%] sm:w-full bg-black px-2 py-1 sm:px-3 sm:py-2 flex flex-col items-center gap-2 sm:gap-3">
   {/* 🔹 Categories */}
   <div className="flex overflow-x-auto space-x-2 sm:space-x-3 w-full sm:w-auto justify-center">
     {categories.map((category) => (
@@ -48,6 +47,8 @@ const SecondLineupHero = () => {
     ))}
   </div>
 
+
+
   {/* 🔹 Centered & Smaller Clear Button */}
   <button
     className="text-white uppercase text-xs sm:text-sm hover:underline px-2 py-1 border-none"
@@ -62,22 +63,22 @@ const SecondLineupHero = () => {
       <div className="mt-6 space-y-3 text-white">
         <div className="flex items-center space-x-3">
           <span className="w-5 h-5 bg-yellow-400"></span>
-          <span className="font-bold text-lg">PERFORMING DISCO JOCKEYS</span>
+          <span className="font-bold text-sm md:text-lg font-mono">PERFORMING DISCO JOCKEYS</span>
         </div>
 
         <div className="flex items-center space-x-3">
           <span className="w-5 h-5 bg-red-600"></span>
-          <span className="font-bold text-lg">PERFORMING ARTISTS</span>
+          <span className="font-bold text-sm md:text-lg font-mono">PERFORMING ARTISTS</span>
         </div>
 
         <div className="flex items-center space-x-3">
           <span className="w-5 h-5 bg-green-500"></span>
-          <span className="font-bold text-lg">PERFORMING DANCERS</span>
+          <span className="font-bold text-sm md:text-lg font-mono">PERFORMING DANCERS</span>
         </div>
 
         <div className="flex items-center space-x-3">
           <span className="w-5 h-5 bg-white border border-gray-400"></span>
-          <span className="font-bold text-lg">PERFORMING HYPEMEN</span>
+          <span className="font-bold text-sm md:text-lg font-mono">PERFORMING HYPEMEN</span>
         </div>
       </div>
 
