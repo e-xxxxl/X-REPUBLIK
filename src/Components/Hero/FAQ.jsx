@@ -6,7 +6,7 @@ import SideScroll from "../Marquee/SideScroll";
 const faqData = [
   { question: "WHAT IS X REPUBLIK?", answer: "X Republik is a festival that brings together creativity, music, and culture.", color: "bg-red-600" },
   { question: "WHEN IS X REPUBLIK HAPPENING?", answer: "X Republik is happening on 0/0/0.", color: "bg-yellow-400 text-black" },
-  { question: "WHO ARE THE HOSTS OF X REPUBLIK?", answer: "The hosts of X Republik are TAG WURLD and COCA COLA.", color: "bg-black" },
+  { question: "WHO ARE THE HOSTS OF X REPUBLIK?", answer: "The hosts of X Republik are TAG WURLD and AEC.", color: "bg-black" },
 ];
 
 const FAQ = () => {
